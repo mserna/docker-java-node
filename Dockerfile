@@ -27,10 +27,6 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   
 RUN apt-get update && apt-get install -y build-essential
 
-## Node installation
-RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
-RUN apt-get install -y nodejs
-
 ## Nightwatch
 RUN npm install -g nightwatch
 
