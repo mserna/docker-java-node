@@ -30,4 +30,13 @@ RUN apt-get update && apt-get install -y build-essential
 ## Nightwatch
 RUN npm install -g nightwatch
 
+## Jest
+RUN npm install -g jest
+
+## Puppeteer
+RUN npm install --save puppeteer
+
+## Mocha-each
+RUN npm install --save mocha-each
+
 CMD [ "node" ]
