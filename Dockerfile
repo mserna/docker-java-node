@@ -27,8 +27,21 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   
 RUN apt-get update && apt-get install -y build-essential
 
+### - For Nightwatch Automation Testing - ####
+
 ## Nightwatch
 RUN npm install -g nightwatch
+
+## Chromedriver
+RUN npm install -g chromedriver --unsafe-perm=true --allow-root
+
+## GeckoDriver
+RUN npm install -g geckodriver --unsafe-perm=true --allow-root
+
+## Chrome
+RUN npm install -g chrome
+
+### - For Puppeteer Automation Testing - ####
 
 ## Jest
 RUN npm install -g jest
