@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:9
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
