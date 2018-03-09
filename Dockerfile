@@ -1,4 +1,3 @@
-FROM java:9
 FROM node:9.4.0
   
 RUN apt-get update && apt-get install -y build-essential
@@ -7,6 +6,9 @@ RUN apt-get update && apt-get install -y build-essential
 
 ## Nightwatch
 RUN npm install -g nightwatch
+
+## Java JDK
+RUN apt-get install default-jdk
 
 ## Chromedriver
 RUN npm install -g chromedriver --unsafe-perm=true --allow-root
